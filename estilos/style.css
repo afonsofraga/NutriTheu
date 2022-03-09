@@ -2,20 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Courgette & display=swap');
-</style>
 
 :root { /* configurações gerais de todo o documento */
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-div: 'Yanone Kaffeesatz', cursive;
-    --fonte-titulo: 'Passion One', cursive;
+    --fonte-titulo: 'Courgette', cursive;
     --cor01: white;
     --cor02: black;
     --cor03: rgba(155, 185, 85, 0.445);
     --cor04: rgb(41, 39, 39);
 
 }
-
-
 * {   
     margin: 0px;
     padding: 0px;
@@ -26,14 +23,14 @@ html, body{
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte-padrao);
-}
+    }
 
 header {
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     color: var(--cor01);
     text-align: center;
-      
 }
+
 header > h1 {
     font-family: var(--fonte-titulo);
     font-variant:small-caps;
@@ -48,7 +45,7 @@ header >p {
 header a, footer a {
     color:var(--cor01);
     text-decoration: none;
-    font-weight: bolder;
+    font-size: 20px;
 }
 
 header a:hover, footer a:hover{
@@ -65,8 +62,7 @@ section {
 }
 
 section > p {
-    padding-bottom: 2em;
-        
+    padding-bottom: 2em;       
 }
 
 section.normal {
@@ -92,22 +88,30 @@ section.imagem > p {
 section#img01 {
     background-image: url('../imagens/salmon-g31bbe38b1_1920.jpg');
     background-position: right center;
-
 }
 
+button{
+        background-color: rgb(9, 117, 189);
+        color: white;
+        border: 15px;
+        padding: 15px 15px 15px 15px;
+        display: inline-block;
+        font-size: 1.5vw;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.4s;
+        margin-top: 10px;
+    }
 
-section#img02 {
-    background-image: url('../imagens/background002.jpg');
-    background-position: right center;    
+button:hover {
+    background-color: white;
+    color:black;  
 }
-
-
 
 footer{
-
-    background-color: var(--cor02);
+    background-color: var(--cor04);
     color: white;
     text-align: center;
-    padding: 10px;
-
+    padding: 20px;
+    border: 50px;
 }
