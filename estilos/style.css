@@ -19,7 +19,7 @@
 * {   
     margin: 0px;
     padding: 0px;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 html, body{
@@ -90,10 +90,11 @@ section.imagem > p {
 }
 
 section#img01 {
-    background-image: url('../imagens/background001.jpg');
+    background-image: url('../imagens/salmon-g31bbe38b1_1920.jpg');
     background-position: right center;
 
 }
+
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
