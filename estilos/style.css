@@ -9,10 +9,10 @@
     --fonte-titulo: 'Courgette', cursive;
     --cor01: white;
     --cor02: black;
-    --cor03: rgba(155, 185, 85, 0.445);
+    --cor03: rgba(68, 95, 5, 0.445);
     --cor04: rgb(41, 39, 39);
-
 }
+
 * {   
     margin: 0px;
     padding: 0px;
@@ -36,7 +36,8 @@ header > h1 {
     font-variant:small-caps;
     font-size: 5vw; /* 10% da largura da teka que não é a melhor maneira vamos aprender uma melh0r maneira mais para frente */
     color: var(--cor01);
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 header >p {
     padding-bottom: 50px;
@@ -45,13 +46,27 @@ header >p {
 header a, footer a {
     color:var(--cor01);
     text-decoration: none;
-    font-size: 20px;
 }
 
 header a:hover, footer a:hover{
-    text-decoration: underline;
-    color:var(--cor03);
+        color:var(--cor03);
 }
+header nav{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+#menu > li
+{
+    list-style: none;
+}
+
+#submenu {
+    list-style: none;
+    text-align: left;
+}
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -91,16 +106,21 @@ section#img01 {
 }
 
 button{
-        background-color: rgb(9, 117, 189);
+    
+        background-color: rgb(4, 52, 83);
         color: white;
-        border: 15px;
+        top: 20px;
+        bottom: 20px;
         padding: 15px 15px 15px 15px;
-        display: inline-block;
         font-size: 1.5vw;
         border-radius: 10px;
         text-align: center;
         transition: 0.4s;
-        margin-top: 10px;
+        margin: auto;
+        display: block;
+        position: relative;
+        
+        
     }
 
 button:hover {
@@ -109,9 +129,12 @@ button:hover {
 }
 
 footer{
+    font-family: var(--fonte-padrao);
     background-color: var(--cor04);
     color: white;
     text-align: center;
     padding: 20px;
     border: 50px;
+    font-size: 2vh;
+    height: 50px;
 }
